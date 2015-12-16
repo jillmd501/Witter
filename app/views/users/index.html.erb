@@ -1,26 +1,38 @@
-<div class="container">
 
-  <br><br>
-
-  <% @service.home_timeline.each do |tweet| %>
-<div class="card" style="broder-solid">
-  <div class="row" style="margin-left:6px; margin-top:6px; margin-right:6px">
-    <p>
-      <img src="<%= tweet.user.profile_image_url %>">
-    <%= tweet.user.screen_name %>
-    <%= tweet.text %>
+<div class="row">
+  <div class="col s3">
+    <div class="card">
+      <img src="http://pbs.twimg.com/profile_images/646725390044557312/QakSSAhz_normal.jpg">
+        <span class="card-title"><%= @service.user.name %></span>
+      <div class="card-content">
+        <p><%= @service.user.screen_name %></p>
+      </div>
+      <div class="card-action">
+        <div class="col s4">
+        </div>
+          <p>tweets</p>
+        <div class="col s4">
+        </div>
+          <p>followers: <%= @service.client.followers.count %></p>
+        <div class="col s4">
+        </div>
+          <p>following: <%= @service.client.friends.count %></p>
+      </div>
+    </div>
   </div>
-</div>
-    </p>
-  <% end %>
-  <div class="row">
-    <div class="col s3">
-      <% form_for @tweet do |f| %>
-        <%= f.label :tweet %>
-        <%= f.text_field :tweet %>
-        <%= f.submit "New Tweet" %>
+  <div class="col s9">
+    <div class="card">
+      <% @service.home_timeline.each do |tweet| %>
+        <div class="card" style="broder-solid">
+          <div class="row" style="margin-left:6px; margin-top:6px; margin-right:6px">
+            <p>
+            <img src="<%= tweet.user.profile_image_url %>">
+            <%= tweet.user.screen_name %>
+            <%= tweet.text %>
+          </div>
+        </div>
+        </p>
       <% end %>
     </div>
   </div>
-
 </div>

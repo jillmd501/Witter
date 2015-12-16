@@ -12,6 +12,7 @@ gem 'omniauth-twitter'
 gem 'figaro'
 gem 'twitter'
 gem 'materialize-sass'
+gem 'rails_12factor'
 
 
 group :development, :test do
