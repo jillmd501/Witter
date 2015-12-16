@@ -1,16 +1,42 @@
-<div class="container">
 
   <br><br>
 
-  <% @service.user_timeline.each do |tweet| %>
-<div class="card" style="broder-solid">
-  <div class="row" style="margin-left:6px; margin-top:6px; margin-right:6px">
-    <p>
-    <img src="<%= tweet.user.profile_image_url %>">
-    <%= tweet.user.screen_name %>
-    <%= tweet.text %>
+<div class="row">
+  <div class="col s3">
+  <div class="card">
+
+        <img src="http://pbs.twimg.com/profile_images/646725390044557312/QakSSAhz_normal.jpg">
+        <span class="card-title">Jill Donohue</span>
+
+      <div class="card-content">
+        <p>@jillmorgand</p>
+      </div>
+      <div class="card-action">
+          <div class="col s4">
+            <p>tweets</p>
+          </div>
+          <div class="col s4">
+            <p>followers</p>
+        </div>
+          <div class="col s4">
+            <p>following</p>
+          </div>
+      </div>
+    </div>
   </div>
-</div>
-    </p>
-  <% end %>
+  <div class="col s9">
+    <div class="card">
+      <% @service.user_timeline.each do |tweet| %>
+        <div class="card" style="broder-solid">
+          <div class="row" style="margin-left:6px; margin-top:6px; margin-right:6px">
+            <p>
+            <img src="<%= tweet.user.profile_image_url %>">
+            <%= tweet.user.screen_name %>
+            <%= tweet.text %>
+          </div>
+        </div>
+        </p>
+      <% end %>
+    </div>
+  </div>
 </div>
