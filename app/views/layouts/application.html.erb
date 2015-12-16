@@ -12,12 +12,11 @@
       <a href="#" class="brand-logo center"><img src="http://danbubanygolf.com/wp-content/uploads/2015/09/Twitter-icon.png", height= "60px", width="60px"></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li> <%= link_to "Home", users_path %></a></li>
-        <li><a href="collapsible.html">Messages</a></li>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><% if @service %>
-        <%= link_to "logout", logout_path %>
+        <%= link_to "Logout", logout_path %>
         <% else %>
-        <%= link_to "login", login_path %>
+        <%= link_to "Login", login_path %>
         <% end %></li>
       </ul>
     </ul>

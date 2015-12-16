@@ -16,10 +16,7 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
   end
 
   def stub_omniauth
-    # first, set OmniAuth to run in test mode
     Witter.config.test_mode = true
-    # then, provide a set of fake oauth data that
-    # omniauth will use when a user tries to authenticate:
     Witter.config.mock_auth[:twitter] = Witter::AuthHash.new({
       provider: 'twitter',
       extra: {
