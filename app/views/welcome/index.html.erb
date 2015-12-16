@@ -1,6 +1,22 @@
-<% if current_user %>
-  <p>hello, <%= current_user.name %></p>
-  <%= link_to "logout", logout_path %>
-<% else %>
-  <%= link_to "login", login_path %>
-<% end %>
+<div class="container">
+  <h1 class="center">Welcome to Witter!</h1>
+  <h5 class="center">Feel confident in bypassing all rants, naysayers, and all around angry people with this Twitter spinoff.  Here at WItter we believe in for lack of a better word, witty and uplifting messages.  Come here for inspiration, a pick me up, or simply a break with your morning coffee. We take pride in getting your day started off the "Witter" way.</h5>
+  <h3 class="center">Cheers.</h3>
+<br><br><br><br>
+  <div class="row">
+    <div class="col s4">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://dailyroabox.com/wp-content/uploads/2015/10/The-Grand-Old-Party-us-election.jpg">
+          <span class="card-title">Election 2016</span>
+        </div>
+        <div class="card-content">
+          <p>Trending Now: The pressure is on with the candidates in Election 2016</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+
+  <br><br>
+
+  <% @service.user_timeline.each do |tweet| %>
+<div class="card" style="broder-solid">
+  <div class="row" style="margin-left:6px; margin-top:6px; margin-right:6px">
+    <p>
+    <img src="<%= tweet.user.profile_image_url %>">
+    <%= tweet.user.screen_name %>
+    <%= tweet.text %>
+  </div>
+</div>
+    </p>
+  <% end %>
+</div>
