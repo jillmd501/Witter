@@ -2,7 +2,7 @@ require "test_helper"
 class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
   include Capybara::DSL
   def setup
-    Capybara.app = OauthWorkshop::Application
+    Capybara.app = Witter::Application
     stub_omniauth
   end
 
@@ -17,10 +17,10 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
 
   def stub_omniauth
     # first, set OmniAuth to run in test mode
-    OmniAuth.config.test_mode = true
+    Witter.config.test_mode = true
     # then, provide a set of fake oauth data that
     # omniauth will use when a user tries to authenticate:
-    OmniAuth.config.mock_auth[:twitter] = OmniAuth::AuthHash.new({
+    Witter.config.mock_auth[:twitter] = Witter::AuthHash.new({
       provider: 'twitter',
       extra: {
         raw_info: {

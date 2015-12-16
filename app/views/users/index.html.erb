@@ -13,4 +13,14 @@
 </div>
     </p>
   <% end %>
+  <div class="row">
+    <div class="col s3">
+      <% form_for @tweet do |f| %>
+        <%= f.label :tweet %>
+        <%= f.text_field :tweet %>
+        <%= f.submit "New Tweet" %>
+      <% end %>
+    </div>
+  </div>
+
 </div>
