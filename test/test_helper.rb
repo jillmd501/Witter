@@ -17,6 +17,7 @@ class ActiveSupport::TestCase
   fixtures :all
 
   VCR.configure do |config|
+    config.allow_http_connections_when_no_cassette = true
     config.cassette_library_dir = "test/cassettes"
     config.hook_into :webmock
   end
@@ -35,8 +36,8 @@ class ActiveSupport::TestCase
           }
         },
         credentials: {
-          token: "pizza",
-          secret: "secretpizza"
+          token: ENV["oauth_token"],
+          secret: ENV["oauth_token_secret"]
         }
       })
     end
