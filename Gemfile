@@ -22,6 +22,10 @@ group :development, :test do
   gem 'pry'
 end
 
+group :test do
+  gem 'webmock'
+end
+
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
