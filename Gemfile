@@ -15,6 +15,8 @@ gem 'materialize-sass'
 gem 'rails_12factor'
 gem 'vcr'
 gem 'webmock'
+gem 'simplecov'
+gem 'mocha'
 
 group :development, :test do
   gem 'capybara'
