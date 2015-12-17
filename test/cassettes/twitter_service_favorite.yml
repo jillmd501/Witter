@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/favorites/create.json
+    body:
+      encoding: UTF-8
+      string: id=673574872690241536
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Authorization:
+      - OAuth oauth_consumer_key="twlYfWi8sJvA6S5uvz4hilBiP", oauth_nonce="b54f9b511b42cb781859fb9d8dc480dd",
+        oauth_signature="wKrwidVwDKNpVwLDZwIiInc8%2Fgk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1450366083", oauth_token="196301468-2dQad5Oin0mIuM4UwTDzAfzi3PuVE7sK2eNkab2L",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '101'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 17 Dec 2015 15:28:03 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 17 Dec 2015 15:28:03 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A145036608327312984; Domain=.twitter.com; Path=/; Expires=Sat,
+        16-Dec-2017 15:28:03 UTC
+      - lang=en; Path=/
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - e433e23ef153742efff5dbe006102aa8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '27'
+      X-Transaction:
+      - 8158d936cc698bfb
+      X-Tsa-Request-Body-Time:
+      - '0'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"code":139,"message":"You have already favorited this status."}]}'
+    http_version: 
+  recorded_at: Thu, 17 Dec 2015 15:28:03 GMT
+recorded_with: VCR 3.0.0

@@ -25,17 +25,17 @@ class WitterService
 
   def followers
    client.followers
-   end
+  end
 
-   def friends
-     client.friends
-   end
+  def friends
+   client.friends
+  end
 
-   def tweets
-     client.user_timeline
-   end
+  def tweets
+   client.user_timeline
+  end
 
-   def favprote
-    client.favorite(tweet_id)
-   end
+  def favorite(tweet_id)
+  client.favorite(tweet_id)
+  end
 end
