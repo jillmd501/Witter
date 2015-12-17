@@ -7,7 +7,7 @@
       <img src="http://pbs.twimg.com/profile_images/646725390044557312/QakSSAhz_normal.jpg">
         <span class="card-title"><%= @service.user.name %></span>
       <div class="card-content">
-        <p><%= @service.user.screen_name %></p>
+        <p>@<%= @service.user.screen_name %></p>
       <div class="card-action">
         <div class="col s4">
           <p>tweets: <%= @service.tweets.count %></p>
@@ -21,17 +21,6 @@
       </div>
     </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="card">
-    <%= form_for(@tweet, url: tweets_path) do |f| %>
-      <%= f.label :tweet %>
-      <%= f.text_field :tweet %>
-      <div class="button"><%= f.submit "New Tweet" %></div>
-    <% end %>
-  </div>
   </div>
   <div class="col s9">
     <div class="card">

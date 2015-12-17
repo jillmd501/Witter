@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.2'
+
 gem 'rails', '4.2.4'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
@@ -23,6 +25,11 @@ group :development, :test do
   gem 'launchy'
   gem 'byebug'
   gem 'pry'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'simplecov'
 end
 
 group :development do

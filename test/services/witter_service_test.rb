@@ -54,5 +54,4 @@ def setup
       assert tweet[:text]
     end
   end
-
 end
