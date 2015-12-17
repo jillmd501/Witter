@@ -6,6 +6,7 @@ class TweetsController < ApplicationController
   end
 
   def favorite
+    binding.pry
     WitterService.new(current_user).favorite(params["id"].to_i)
     sleep(2)
     redirect_to :back

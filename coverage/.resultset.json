@@ -41,7 +41,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -64,12 +64,13 @@
       "/Users/jilldonohue/Module_3/witter/app/controllers/tweets_controller.rb": [
         1,
         1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
         null,
         null,
         1,
+        0,
         0,
         0,
         0,
@@ -125,6 +126,6 @@
         0
       ]
     },
-    "timestamp": 1450375228
+    "timestamp": 1450376413
   }
 }
