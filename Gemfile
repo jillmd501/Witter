@@ -14,7 +14,6 @@ gem 'twitter'
 gem 'materialize-sass'
 gem 'rails_12factor'
 gem 'vcr'
-gem 'webmock'
 
 group :development, :test do
   gem 'capybara'
