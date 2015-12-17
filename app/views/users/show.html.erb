@@ -4,16 +4,16 @@
       <img src="http://pbs.twimg.com/profile_images/646725390044557312/QakSSAhz_normal.jpg">
         <span class="card-title"><%= @service.user.name %></span>
       <div class="card-content">
-        <p><%= @service.user.screen_name %></p>
+        <p>@<%= @service.user.screen_name %></p>
       <div class="card-action">
         <div class="col s4">
           <p>tweets: <%= @service.tweets.count %></p>
         </div>
         <div class="col s4">
-          <p><%= @service.client.followers.count %></p>
+          <p>followers: <%= @service.client.followers.count %></p>
         </div>
         <div class="col s4">
-          <p><%= @service.client.friends.count %></p>
+          <p>following: <%= @service.client.friends.count %></p>
         </div>
       </div>
     </div>
@@ -46,7 +46,6 @@
                 <%= link_to "Favorite", favorite_tweet_path(tweet.id), method: :post %>
               <% end %>
             </div>
-
           </div>
         </div>
         </p>

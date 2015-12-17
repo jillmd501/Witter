@@ -8,7 +8,6 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
   end
 
   test "logging in" do
-    skip
     visit "/"
     assert_equal 200, page.status_code
     click_on "login"
