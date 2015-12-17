@@ -13,12 +13,16 @@ gem 'figaro'
 gem 'twitter'
 gem 'materialize-sass'
 gem 'rails_12factor'
-
+gem 'vcr'
 
 group :development, :test do
   gem 'byebug'
   gem 'pry'
   gem 'capybara'
+end
+
+group :test do
+  gem 'webmock'
 end
 
 group :development do
