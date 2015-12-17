@@ -35,7 +35,7 @@ class WitterService
      client.user_timeline
    end
 
-   def favorite(tweet_id)
-     client.favorite(tweet_id)
+   def favprote
+    client.favorite(tweet_id)
    end
 end
