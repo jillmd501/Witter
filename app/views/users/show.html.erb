@@ -1,4 +1,6 @@
-
+<div class="container">
+  <h4 class="amber-text">My Tweets</h4>
+</div>
 <div class="row">
   <div class="col s3">
     <div class="card">
@@ -11,10 +13,10 @@
           <p>tweets: <%= @service.tweets.count %></p>
         </div>
         <div class="col s4">
-          <p><%= @service.client.followers.count %></p>
+          <p>followers: <%= @service.client.followers.count %></p>
         </div>
         <div class="col s4">
-          <p><%= @service.client.friends.count %></p>
+          <p>following: <%= @service.client.friends.count %></p>
         </div>
       </div>
     </div>
@@ -27,7 +29,7 @@
     <%= form_for(@tweet, url: tweets_path) do |f| %>
       <%= f.label :tweet %>
       <%= f.text_field :tweet %>
-      <%= f.submit "New Tweet" %>
+      <div class="button"><%= f.submit "New Tweet" %></div>
     <% end %>
   </div>
   </div>
@@ -42,12 +44,11 @@
               <%= tweet.user.screen_name %>
               <%= tweet.text %>
               <% if tweet.favorited? %>
-                yay favorited!
+                <div class="red-text"> <3 </div>
               <%  else %>
                 <%= link_to "Favorite", favorite_tweet_path(tweet.id), method: :post %>
               <% end %>
             </div>
-
           </div>
         </div>
         </p>
