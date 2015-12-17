@@ -4,12 +4,12 @@
       "/Users/jilldonohue/Module_3/witter/app/models/user.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -19,13 +19,25 @@
         1,
         null,
         1,
-        3,
+        6,
         null,
-        3,
-        3,
-        3,
-        3,
-        3,
+        6,
+        6,
+        6,
+        6,
+        6,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         1,
@@ -43,37 +55,17 @@
         1,
         0,
         null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/jilldonohue/Module_3/witter/app/controllers/welcome_controller.rb": [
-        1,
         null
       ],
       "/Users/jilldonohue/Module_3/witter/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
         0,
-        null,
-        1,
-        null
-      ],
-      "/Users/jilldonohue/Module_3/witter/app/helpers/application_helper.rb": [
-        1,
-        null
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "/Users/jilldonohue/Module_3/witter/app/controllers/sessions_controller.rb": [
         0,
@@ -118,8 +110,16 @@
         0,
         0,
         0
+      ],
+      "/Users/jilldonohue/Module_3/witter/app/controllers/welcome_controller.rb": [
+        0,
+        0
+      ],
+      "/Users/jilldonohue/Module_3/witter/app/helpers/application_helper.rb": [
+        0,
+        0
       ]
     },
-    "timestamp": 1450366510
+    "timestamp": 1450370781
   }
 }
