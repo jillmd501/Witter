@@ -54,14 +54,4 @@ def setup
       assert tweet[:text]
     end
   end
-
-  test "#create_tweet" do
-    skip
-    VCR.use_cassette("twitter_service#create_tweet") do
-      tweet_msg = "My tweet"
-      tweet = service.tweet(tweet_msg)
-
-      assert_equal "My tweet", tweet.text
-    end
-  end
 end
